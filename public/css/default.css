@@ -1,0 +1,76 @@
+:root {
+  --blue: #1756c5;
+  --indigo: #31316A;
+  --purple: #8965e0;
+  --pink: #f3a4b5;
+  --red: #FA5252;
+  --orange: #FF9F89;
+  --yellow: #f5b759;
+  --green: #05A677;
+  --teal: #1E90FF;
+  --cyan: #63b1bd;
+  --white: #ffffff;
+  --gray: #93a5be;
+  --gray-dark: #506690;
+  --primary: #0948B3;
+  --secondary: #EE5050;
+  --success: #05A677;
+  --info: #1E90FF;
+  --warning: #f5b759;
+  --danger: #FA5252;
+  --light: #eaedf2;
+  --dark: #0d1431;
+  --default: #0c3f94;
+  --tertiary: #05A677;
+  --quaternary: #fbf6f0;
+  --white: #ffffff;
+  --gray: #4A5073;
+  --neutral: #ffffff;
+  --soft: #f5f8fb;
+  --black: #24262b;
+  --purple: #8965e0;
+  --indigo: #31316A;
+  --orange: #FF9F89;
+  --brown: #b9a084;
+  --blue: #1756c5;
+  --cyan: #63b1bd;
+  --gray-100: #f3f7fa;
+  --gray-200: #f5f8fb;
+  --gray-300: #F0F3F6;
+  --gray-400: #eaedf2;
+  --gray-500: #b1bcce;
+  --gray-600: #93a5be;
+  --gray-700: #66799e;
+  --gray-800: #506690;
+  --facebook: #3b5999;
+  --twitter: #1da1f2;
+  --google: #dd4b39;
+  --instagram: #e4405f;
+  --pinterest: #bd081c;
+  --youtube: #cd201f;
+  --slack: #3aaf85;
+  --dribbble: #ea4c89;
+  --dropbox: #1E90FF;
+  --twitch: #4B367C;
+  --paypal: #ecb32c;
+  --behance: #0057ff;
+  --reddit: #E84422;
+  --github: #222222;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html,
+body {
+  background-color: var(--primary);
+}
+
+.nav {
+  height: 70px;
+}
+

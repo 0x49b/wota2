@@ -1,5 +1,12 @@
 {
     "/public/js/app.js": "/public/js/app.js",
     "/public/css/app.css": "/public/css/app.css",
-    "/public/img/dead-ghost.svg": "/public/img/dead-ghost.svg"
+    "/public/css/default.css": "/public/css/default.css",
+    "/public/css/custom.css": "/public/css/custom.css",
+    "/public/img/dead-ghost.svg": "/public/img/dead-ghost.svg",
+    "/public/img/dead-server.svg": "/public/img/dead-server.svg",
+    "/public/img/light-small.svg": "/public/img/light-small.svg",
+    "/public/img/light.svg": "/public/img/light.svg",
+    "/public/img/wota-white.png": "/public/img/wota-white.png",
+    "/public/img/wota.png": "/public/img/wota.png"
 }

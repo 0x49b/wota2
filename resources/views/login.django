@@ -29,6 +29,7 @@
                     <label for="password">Password</label>
                     <input id="password" class="form-control" type="password" placeholder="Enter Password" name="password">
                 </div>
+                <input type="hidden" name="next" value="{{ next }}">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
 

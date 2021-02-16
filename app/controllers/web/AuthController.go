@@ -26,7 +26,13 @@ func IsAuthenticated(session *session.Session, ctx *fiber.Ctx) (authenticated bo
 
 func ShowLoginForm() fiber.Handler {
 	return func(ctx *fiber.Ctx) error {
-		err := ctx.Render("login", fiber.Map{})
+
+		fmt.Println(ctx.Query("next"))
+
+		bind := fiber.Map{
+			"next": ctx.Query("next"),
+		}
+		err := ctx.Render("login", bind)
 		if err != nil {
 			if err2 := ctx.Status(500).SendString(err.Error()); err2 != nil {
 				panic(err2.Error())
@@ -58,9 +64,21 @@ func PostLoginForm(hasher hashing.Driver, session *session.Session, db *database
 				// Set the user ID in the session store
 				store.Set("userid", user.ID)
 				fmt.Printf("User set in session store with ID: %v\n", user.ID)
-				if err := ctx.SendString("You should be logged in successfully!"); err != nil {
-					panic(err.Error())
+
+				next := ctx.FormValue("next")
+
+				if next != "" {
+					err := ctx.Redirect(next)
+					if err != nil {
+						panic(err.Error())
+					}
+				} else {
+					err := ctx.SendString("You should be logged in successfully!")
+					if err != nil {
+						panic(err.Error())
+					}
 				}
+
 			} else {
 				if err := ctx.SendString("The entered details do not match our records."); err != nil {
 					panic(err.Error())
@@ -86,14 +104,30 @@ func PostLogoutForm(sessionLookup string, session *session.Session, db *database
 			if strings.ToLower(split[0]) == "cookie" {
 				// Unset cookie on client-side
 				ctx.Set("Set-Cookie", split[1]+"=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; HttpOnly")
-				if err := ctx.SendString("You are now logged out."); err != nil {
-					panic(err.Error())
+
+				next := ""
+				if ctx.Method() == "POST" {
+					next = ctx.FormValue("next")
+				} else if ctx.Method() == "GET" {
+					next = ctx.Query("next")
 				}
+
+				if next != "" {
+					err := ctx.Redirect(next)
+					if err != nil {
+						panic(err.Error())
+					}
+				} else {
+					err := ctx.SendString("You are now logged out.")
+					if err != nil {
+						panic(err.Error())
+					}
+				}
+
 				return nil
 			}
 			return nil
 		}
-		// TODO: Redirect?
 		return nil
 	}
 }

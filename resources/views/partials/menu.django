@@ -1,0 +1,31 @@
+<nav id="navbar-main"
+     class="navbar fixed-top navbar-main navbar-expand-lg navbar-dark navbar-theme-primary headroom py-lg-2 px-lg-6">
+    <div class="container"><a class="navbar-brand d-none" href="./index.html">
+        <div class="d-flex align-items-center"><img class="navbar-brand-dark rotate-logo"
+                                                    src="./assets/img/brand/light.svg" alt="Logo light"> <img
+                class="navbar-brand-light rotate-logo" src="./assets/img/brand/dark.svg" alt="Logo dark"></div>
+    </a>
+        <div class="navbar-collapse collapse" id="navbar_global">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-brand"><a class="d-flex align-items-center" href="./index.html"><img
+                            src="./assets/img/brand/dark.svg" alt="Logo dark"></a></div>
+                    <div class="col-6 collapse-close"><a href="#navbar_global" class="fas fa-times"
+                                                         data-toggle="collapse" data-target="#navbar_global"
+                                                         aria-controls="navbar_global" aria-expanded="false"
+                                                         aria-label="Toggle navigation"></a></div>
+                </div>
+            </div>
+            <ul class="navbar-nav navbar-nav-hover justify-content-center navbar-nav-scroll">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Overview</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Overview</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Overview</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Overview</a></li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-block">
+            <a href="https://themesberg.com/docs/rocket/getting-started/overview/" target="_blank"
+               class="btn btn-outline-white btn-docs animate-up-2"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </div>
+    </div>
+</nav>

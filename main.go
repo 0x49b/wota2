@@ -23,6 +23,7 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/expvar"
 	"github.com/gofiber/fiber/v2/middleware/favicon"
 	"github.com/gofiber/fiber/v2/middleware/limiter"
+	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/monitor"
 	"github.com/gofiber/fiber/v2/middleware/pprof"
 	"github.com/gofiber/fiber/v2/middleware/recover"
@@ -84,11 +85,6 @@ func main() {
 				fmt.Println("failed to automigrate event model:", err.Error())
 				return
 			}
-			err = app.DB.AutoMigrate(&models.Invitee{})
-			if err != nil {
-				fmt.Println("failed to automigrate invitee model:", err.Error())
-				return
-			}
 			err = app.DB.AutoMigrate(&models.Question{})
 			if err != nil {
 				fmt.Println("failed to automigrate question model:", err.Error())
@@ -97,6 +93,11 @@ func main() {
 			err = app.DB.AutoMigrate(&models.Result{})
 			if err != nil {
 				fmt.Println("failed to automigrate result model:", err.Error())
+				return
+			}
+			err = app.DB.AutoMigrate(&models.Invitee{})
+			if err != nil {
+				fmt.Println("failed to automigrate invitee model:", err.Error())
 				return
 			}
 		}
@@ -141,6 +142,15 @@ func main() {
 }
 
 func (app *App) registerMiddlewares(config *configuration.Config) {
+
+	if config.GetBool("MW_LOGGER_ENABLED") {
+		app.Use(logger.New(logger.Config{
+			Format:     config.GetString("MW_LOGGER_FORMAT"),
+			TimeFormat: config.GetString("MW_LOGGER_TIME_FORMAT"),
+			TimeZone:   config.GetString("MW_LOGGER_TIMEZONE"),
+		}))
+	}
+
 	// Middleware - Custom Access Logger based on zap
 	if config.GetBool("MW_ACCESS_LOGGER_ENABLED") {
 		app.Use(middleware.AccessLogger(&middleware.AccessLoggerConfig{

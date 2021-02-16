@@ -65,7 +65,7 @@ func AccessLogger(config *AccessLoggerConfig) fiber.Handler {
 		core := zapcore.NewCore(
 			zapcore.NewJSONEncoder(zap.NewProductionEncoderConfig()),
 			w,
-			zap.InfoLevel,
+			zap.DebugLevel,
 		)
 		// Create a zap logger object
 		logger = zap.New(core)

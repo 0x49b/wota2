@@ -25,22 +25,14 @@
                 <path d="M720.081,404.977L424.806,700.252" style="fill:none;stroke:rgb(83,83,83);stroke-width:26.04px;"/>
             </g>
         </g>
-        <g id="Magnifier" transform="matrix(1.80262,0.379547,-0.483011,1.41649,2442.5,-781.68)">
-            <g transform="matrix(0.725344,-4.02647e-17,4.02647e-17,0.725344,210.67,367.437)">
-                <circle cx="759.848" cy="1209.92" r="158.519" style="fill:rgb(237,240,255);stroke:rgb(83,83,83);stroke-width:28.72px;"/>
-            </g>
-            <g transform="matrix(0.651478,0,0,0.601133,288.523,451.547)">
-                <path d="M701.674,1525.27L701.674,1813.76C701.674,1826.8 711.441,1837.38 723.471,1837.38C735.5,1837.38 745.267,1826.8 745.267,1813.76L745.267,1525.27" style="fill:rgb(83,83,83);stroke:rgb(83,83,83);stroke-width:33.24px;"/>
-            </g>
-        </g>
         <g transform="matrix(1.86621,0,0,1.46646,-686.764,-531.889)">
-            <text x="482.638px" y="585.125px" style="font-family:'ArialRoundedMTBold', 'Arial Rounded MT Bold', sans-serif;font-size:266.112px;fill:rgb(83,83,83);">?</text>
+            <text x="482.638px" y="585.125px" style="font-family:'ArialRoundedMTBold', 'Arial Rounded MT Bold', sans-serif;font-size:266.112px;fill:rgb(234,234,234);">?</text>
         </g>
         <g transform="matrix(1.86621,0,0,1.46646,-888.346,-243.4)">
-            <text x="482.638px" y="585.125px" style="font-family:'ArialRoundedMTBold', 'Arial Rounded MT Bold', sans-serif;font-size:266.112px;fill:rgb(83,83,83);">?</text>
+            <text x="482.638px" y="585.125px" style="font-family:'ArialRoundedMTBold', 'Arial Rounded MT Bold', sans-serif;font-size:266.112px;fill:rgb(234,234,234);">?</text>
         </g>
         <g transform="matrix(1.86621,0,0,1.46646,-565.518,-140.905)">
-            <text x="482.638px" y="585.125px" style="font-family:'ArialRoundedMTBold', 'Arial Rounded MT Bold', sans-serif;font-size:266.112px;fill:rgb(83,83,83);">?</text>
+            <text x="482.638px" y="585.125px" style="font-family:'ArialRoundedMTBold', 'Arial Rounded MT Bold', sans-serif;font-size:266.112px;fill:rgb(234,234,234);">?</text>
         </g>
     </g>
 </svg>
