@@ -128,12 +128,11 @@ func EditEvent(db *database.Database) fiber.Handler {
 			return err
 		}
 
-		/*
-			Event.Name = EditEvent.Name
+		Event.Name = EditEvent.Name
+		Event.Date = EditEvent.Date
+		Event.Autoclose = EditEvent.Autoclose
+		Event.UserID = EditEvent.UserID
 
-			Event.Email = EditEvent.Email
-			Event.RoleID = EditEvent.RoleID
-		*/
 		// Match role to Event
 		if Event.UserID != 0 {
 			User := new(models.User)

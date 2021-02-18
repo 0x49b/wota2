@@ -59,6 +59,7 @@
             <a href="https://themesberg.com/docs/rocket/getting-started/overview/" target="_blank"
                class="btn btn-outline-white btn-docs animate-up-2"><i class="fas fa-book"></i> Docs</a>
             {% if auth %}
+            <span class="navbar-text">Hello, {{ username }}</span>
             <a href="/logout?next=/" class="btn btn-outline-white btn-docs animate-up-2">
                 <i class="fas fa-sign-out-alt"></i> Logout
             </a>

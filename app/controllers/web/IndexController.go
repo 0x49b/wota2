@@ -26,6 +26,7 @@ func Index(session *session.Session, db *database.Database) fiber.Handler {
 				log.Fatalf("Error when finding user by ID: %v", err)
 			}
 			bind["username"] = user.Name
+
 		}
 
 		// Render template

@@ -182,7 +182,7 @@ func (config *Config) setDefaults() {
 	config.SetDefault("FIBER_REDUCEMEMORYUSAGE", false)
 
 	config.SetDefault("MW_LOGGER_ENABLED", true)
-	config.SetDefault("MW_LOGGER_FORMAT", "${pid} ${status} - ${method} ${path}\n")
+	config.SetDefault("MW_LOGGER_FORMAT", "${time} ${pid} ${status} - ${method} ${path}\n")
 	config.SetDefault("MW_LOGGER_TIME_FORMAT", "02-Jan-2006")
 	config.SetDefault("MW_LOGGER_TIMEZONE", "Europe/Zurich")
 

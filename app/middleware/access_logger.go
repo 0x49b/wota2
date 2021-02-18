@@ -109,9 +109,9 @@ func AccessLogger(config *AccessLoggerConfig) fiber.Handler {
 			zap.String("protocol", ctx.Protocol()),
 			zap.Int("status", ctx.Response().StatusCode()),
 
-			zap.String("x-forwarded-for", ctx.Get(fiber.HeaderXForwardedFor)),
-			zap.String("user-agent", ctx.Get(fiber.HeaderUserAgent)),
-			zap.String("referer", ctx.Get(fiber.HeaderReferer)),
+			//zap.String("x-forwarded-for", ctx.Get(fiber.HeaderXForwardedFor)),
+			//zap.String("user-agent", ctx.Get(fiber.HeaderUserAgent)),
+			//zap.String("referer", ctx.Get(fiber.HeaderReferer)),
 
 			zap.Int("bytes_received", len(ctx.Request().Body())),
 			zap.Int("bytes_sent", len(ctx.Response().Body())),
