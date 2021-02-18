@@ -130,17 +130,29 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 
 /***/ }),
 
+/***/ "./resources/assets/sass/signin.scss":
+/*!*******************************************!*\
+  !*** ./resources/assets/sass/signin.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvYXNzZXRzL3Nhc3Mvc2lnbmluLnNjc3M/YTUxZCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3Jlc291cmNlcy9hc3NldHMvc2Fzcy9zaWduaW4uc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/assets/sass/signin.scss\n");
+
+/***/ }),
+
 /***/ 0:
-/*!****************************************************************************************************************************************************!*\
-  !*** multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss ./resources/assets/sass/default.scss ./resources/assets/sass/custom.scss ***!
-  \****************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss ./resources/assets/sass/default.scss ./resources/assets/sass/custom.scss ./resources/assets/sass/signin.scss ***!
+  \****************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\florian\go\src\github.com\lichtwellenreiter\wota\resources\assets\js\app.js */"./resources/assets/js/app.js");
-__webpack_require__(/*! C:\Users\florian\go\src\github.com\lichtwellenreiter\wota\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
-__webpack_require__(/*! C:\Users\florian\go\src\github.com\lichtwellenreiter\wota\resources\assets\sass\default.scss */"./resources/assets/sass/default.scss");
-module.exports = __webpack_require__(/*! C:\Users\florian\go\src\github.com\lichtwellenreiter\wota\resources\assets\sass\custom.scss */"./resources/assets/sass/custom.scss");
+__webpack_require__(/*! C:\Users\u210645\go\src\github.com\lichtwellenreiter\wota\resources\assets\js\app.js */"./resources/assets/js/app.js");
+__webpack_require__(/*! C:\Users\u210645\go\src\github.com\lichtwellenreiter\wota\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
+__webpack_require__(/*! C:\Users\u210645\go\src\github.com\lichtwellenreiter\wota\resources\assets\sass\default.scss */"./resources/assets/sass/default.scss");
+__webpack_require__(/*! C:\Users\u210645\go\src\github.com\lichtwellenreiter\wota\resources\assets\sass\custom.scss */"./resources/assets/sass/custom.scss");
+module.exports = __webpack_require__(/*! C:\Users\u210645\go\src\github.com\lichtwellenreiter\wota\resources\assets\sass\signin.scss */"./resources/assets/sass/signin.scss");
 
 
 /***/ })

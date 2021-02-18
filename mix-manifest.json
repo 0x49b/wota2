@@ -3,6 +3,7 @@
     "/public/css/app.css": "/public/css/app.css",
     "/public/css/default.css": "/public/css/default.css",
     "/public/css/custom.css": "/public/css/custom.css",
+    "/public/css/signin.css": "/public/css/signin.css",
     "/public/img/dead-ghost.svg": "/public/img/dead-ghost.svg",
     "/public/img/dead-server.svg": "/public/img/dead-server.svg",
     "/public/img/light-small.svg": "/public/img/light-small.svg",
